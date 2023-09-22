@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="sm.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/brands.min.css"
+        integrity="sha512-nS1/hdh2b0U8SeA8tlo7QblY6rY6C+MgkZIeRzJQQvMsFfMQFUKp+cgMN2Uuy+OtbQ4RoLMIlO2iF7bIEY3Oyg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.css"
+        integrity="sha512-ITS8GbPjCRA7c/PBl6Kqb9XjvQbKMBXpzEmpi7BgRwf6mUCySmHbF9opWfVUQvbdiYouDYxhxttWS+wyq4l+Ug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Wether APP</title>
+</head>
+
+<body onload="animation()">
+    <div class="loading"></div>
+    <main>
+        <div class="main-data">
+            <div class="border">
+                <div class="data">
+                    <div class="search">
+                        <form action="/post" method="post">
+                            <input type="text" name="city" id="" placeholder="city,country">
+                        <button>Search</button>
+                        </form>
+                    </div>
+                    <div class="wether-data">
+                        <img src=<%=code%> alt="">
+                        <h3><%=over%></h3>
+                    </div>
+                    <div class="place wave1"></div>
+                    <div class="place wave2"></div>
+                    <div class="place wave3"></div>
+                    <div class="place wave4"></div>
+                    <div class="place-data">
+                        <div class="location-date">
+                            <div class="loction">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <h2 class="place-name"><%= city %> , <%=country%></h2>
+                            </div>
+                            <div class="date">
+
+                                <h4 class="date"><%=date%></h4>
+                            </div>
+                        </div>
+                        <div class="temp">
+                            <div class="real-temp">
+
+                                <h2 class="temp-cel"><%=temprature%></h2>
+                            </div>
+                            <div class="min-max">
+                                <div class="date">
+
+                                    <h4 class="date">Min <%= mini %> || Max <%= max %> </h4>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <footer>
+        <h4>Copyright @ Satyendra Kumar Mishra</h4>
+    </footer>
+    <script src="/js/index.js"></script>
+</body>
+
+</html>
